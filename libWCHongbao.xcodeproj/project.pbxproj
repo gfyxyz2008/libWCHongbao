@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		636BF2B31D44FFA300A379BF /* libWCHongbao.mm in Sources */ = {isa = PBXBuildFile; fileRef = 636BF2B21D44FFA300A379BF /* libWCHongbao.mm */; };
+		636BF2BE1D44FFE000A379BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636BF2BD1D44FFE000A379BF /* UIKit.framework */; };
+		638844A61D4DB6A7008CD83A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638844A51D4DB6A7008CD83A /* AVFoundation.framework */; };
+		63CFF5FC1D4CDAA3002473F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63CFF5FB1D4CDAA3002473F1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		636BF2A41D44FFA300A379BF /* libWCHongbao.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libWCHongbao.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		636BF2AC1D44FFA300A379BF /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		636BF2AD1D44FFA300A379BF /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		636BF2AF1D44FFA300A379BF /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		636BF2B01D44FFA300A379BF /* libWCHongbao-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libWCHongbao-Prefix.pch"; sourceTree = "<group>"; };
+		636BF2B21D44FFA300A379BF /* libWCHongbao.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = libWCHongbao.mm; sourceTree = "<group>"; };
+		636BF2B71D44FFA300A379BF /* libWCHongbao.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = libWCHongbao.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/libWCHongbao.plist; sourceTree = "<group>"; };
+		636BF2BD1D44FFE000A379BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		638844A51D4DB6A7008CD83A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		63CFF5FB1D4CDAA3002473F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		636BF2A01D44FFA300A379BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638844A61D4DB6A7008CD83A /* AVFoundation.framework in Frameworks */,
+				63CFF5FC1D4CDAA3002473F1 /* Foundation.framework in Frameworks */,
+				636BF2BE1D44FFE000A379BF /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		636BF2991D44FFA300A379BF = {
+			isa = PBXGroup;
+			children = (
+				636BF2A91D44FFA300A379BF /* libWCHongbao */,
+				636BF2A61D44FFA300A379BF /* Frameworks */,
+				636BF2A51D44FFA300A379BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		636BF2A51D44FFA300A379BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				636BF2A41D44FFA300A379BF /* libWCHongbao.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		636BF2A61D44FFA300A379BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				638844A51D4DB6A7008CD83A /* AVFoundation.framework */,
+				63CFF5FB1D4CDAA3002473F1 /* Foundation.framework */,
+				636BF2BD1D44FFE000A379BF /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		636BF2A91D44FFA300A379BF /* libWCHongbao */ = {
+			isa = PBXGroup;
+			children = (
+				636BF2B21D44FFA300A379BF /* libWCHongbao.mm */,
+				636BF2AA1D44FFA300A379BF /* Package */,
+				636BF2AE1D44FFA300A379BF /* Supporting Files */,
+			);
+			path = libWCHongbao;
+			sourceTree = "<group>";
+		};
+		636BF2AA1D44FFA300A379BF /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				636BF2AB1D44FFA300A379BF /* DEBIAN */,
+				636BF2B41D44FFA300A379BF /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		636BF2AB1D44FFA300A379BF /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				636BF2AC1D44FFA300A379BF /* control.txt */,
+				636BF2AD1D44FFA300A379BF /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		636BF2AE1D44FFA300A379BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				636BF2AF1D44FFA300A379BF /* PackageVersion.plist */,
+				636BF2B01D44FFA300A379BF /* libWCHongbao-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		636BF2B41D44FFA300A379BF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				636BF2B51D44FFA300A379BF /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		636BF2B51D44FFA300A379BF /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				636BF2B61D44FFA300A379BF /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		636BF2B61D44FFA300A379BF /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				636BF2B71D44FFA300A379BF /* libWCHongbao.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		636BF2A11D44FFA300A379BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		636BF2A31D44FFA300A379BF /* libWCHongbao */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 636BF2BA1D44FFA300A379BF /* Build configuration list for PBXNativeTarget "libWCHongbao" */;
+			buildPhases = (
+				636BF29E1D44FFA300A379BF /* ShellScript */,
+				636BF29F1D44FFA300A379BF /* Sources */,
+				636BF2A01D44FFA300A379BF /* Frameworks */,
+				636BF2A11D44FFA300A379BF /* Headers */,
+				636BF2A21D44FFA300A379BF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libWCHongbao;
+			productName = libWCHongbao;
+			productReference = 636BF2A41D44FFA300A379BF /* libWCHongbao.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		636BF29A1D44FFA300A379BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					636BF2A31D44FFA300A379BF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 636BF29D1D44FFA300A379BF /* Build configuration list for PBXProject "libWCHongbao" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 636BF2991D44FFA300A379BF;
+			productRefGroup = 636BF2A51D44FFA300A379BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				636BF2A31D44FFA300A379BF /* libWCHongbao */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		636BF29E1D44FFA300A379BF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		636BF2A21D44FFA300A379BF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		636BF29F1D44FFA300A379BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636BF2B31D44FFA300A379BF /* libWCHongbao.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		636BF2B81D44FFA300A379BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		636BF2B91D44FFA300A379BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		636BF2BB1D44FFA300A379BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libWCHongbao/libWCHongbao-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		636BF2BC1D44FFA300A379BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libWCHongbao/libWCHongbao-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		636BF29D1D44FFA300A379BF /* Build configuration list for PBXProject "libWCHongbao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				636BF2B81D44FFA300A379BF /* Debug */,
+				636BF2B91D44FFA300A379BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		636BF2BA1D44FFA300A379BF /* Build configuration list for PBXNativeTarget "libWCHongbao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				636BF2BB1D44FFA300A379BF /* Debug */,
+				636BF2BC1D44FFA300A379BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 636BF29A1D44FFA300A379BF /* Project object */;
+}
